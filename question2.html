@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <textarea id="tarea" placeholder="Start typing...."></textarea>
+    <p id="count">Character Count : 0</p>
+
+    <script>
+        const textArea = document.getElementById("tarea")
+        const counter = document.getElementById("count")
+
+        textArea.addEventListener("input", function(event){
+            let length = event.target.value.length;
+            counter.textContent = `Characters: ${length}`
+        })
+    
+    </script>
+</body>
+</html>
