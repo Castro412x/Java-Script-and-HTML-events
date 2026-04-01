@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="red">Red</button>
+    <button id="green">Green</button>
+    <button id="blue">Blue</button>
+
+
+    <script>
+        const toREd = document.getElementById("red")
+        const toGreen = document.getElementById("green")
+        const toBlue = document.getElementById("blue")
+
+        toREd.addEventListener("click", function(){
+            document.body.style.backgroundColor = "red"
+        });
+        toGreen.addEventListener("click", function(){
+            document.body.style.backgroundColor = "green"
+        });
+        toBlue.addEventListener("click", function(){
+            document.body.style.backgroundColor = "blue"
+        })
+    </script>
+</body>
+</html>
