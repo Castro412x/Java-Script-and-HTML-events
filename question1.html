@@ -7,7 +7,7 @@
 </head>
 <body>
    <button id="btn" onclick="">Click Me</button>
-<p id="pgraph">Hello</p>
+<p id="pgraph">You have clicked 0 times</p>
 
 <script>
     const button = document.getElementById("btn")
@@ -16,7 +16,7 @@
 
     button.addEventListener("click", function(){
         const increaseCount = count++
-        paragraph.textContent = `You have clicked ${count + 1} times`
+        paragraph.textContent = `You have clicked ${count} times`
     })
 </script> 
 </body>
